@@ -1583,7 +1583,7 @@ footer {
   padding: 3px;
   border-radius: 50%;
 }
-label:before {
+.circle-label:before {
   content: "";
   width: 18px;
   height: 18px;
@@ -1593,6 +1593,10 @@ label:before {
   vertical-align: middle;
   margin-top: -4px;
   margin-left: 4px;
+  transition: all 0.4s ease-in-out;
+}
+.circle-label:hover::before {
+  border: 2px solid #fc4c4b;
 }
 .color-style:hover {
   border: 2px solid #fc4c4c;
@@ -1625,11 +1629,11 @@ input[type="checkbox"] {
 input[type="checkbox"] {
   display: none;
 }
-label {
+.circle-label {
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
-label:hover {
+.circle-label:hover {
   color: #fc4c4b;
 }
 .before-none {
