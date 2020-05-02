@@ -2028,8 +2028,11 @@ input::-webkit-inner-spin-button {
   .contacts-detail-divs {
     margin: 10px 0;
   }
+  footer {
+    background-repeat: repeat !important;
+  }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .contact-page-inputs {
     width: 90%;
   }
@@ -2043,7 +2046,7 @@ input::-webkit-inner-spin-button {
     flex-direction: column !important;
   }
   footer {
-    background-repeat: repeat;
+    background-repeat: repeat !important;
   }
   .footer-contents {
     flex-direction: column;
