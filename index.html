@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@ v24.2.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="./OwlCarousel2-2.3.4/docs/"> -->
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="ham-menu-side">
+        <ul >
+          <li><a href="#">آیتم 1</a></li>
+          <li><a href="#">آیتم 1</a></li>
+          <li><a href="#">آیتم 1</a></li>
+          <li><a href="#">آیتم 1</a></li>
+          <li><a href="#">آیتم 1</a></li>
+          <li><a href="#">آیتم 1</a></li>
+        </ul>
+      </div>
+      <header class="site-header">
+        <div class="nav-container flex">
+          <div class="menubar-section flex">
+            <div onclick="hamburgerMenu()" class="hamburger-menu flex flex-column">
+              <div class="ham-menu-lines"></div>
+              <div class="ham-menu-lines"></div>
+              <div class="ham-menu-lines"></div>
+            </div>
+            <ul class="menu-icon">
+              <li>
+                <a href="#"><span class="fa fa-search"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-user"></span></a>
+              </li>
+              <li>
+                <a style="position: relative; top: -12px;" href="#">
+                  <span class="fas shopping fa-shopping-bag"></span>
+                  <div id="cartCount">0</div>
+                </a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-heart"></span></a>
+              </li>
+            </ul>
+            <div class="mega-menu m-navbar flex">
+              <a class="current-menu-item" href="#"> خانه</a>
+              <div class="m-dropdown">
+                <button class="dropbtn normal-menu-item">
+                  آرایش
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>نسخه آزمایشی</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>دسته بندی</h3>
+                      <a href="#">آیتم</a>
+                      <a href="#">آیتم </a>
+                      <a href="#">آیتم </a>
+                    </div>
+                    <div class="m-column">
+                      <h3>محصولات</h3>
+                      <a href="#">آیتم </a>
+                      <a href="#">آیتم </a>
+                      <a href="#">آیتم </a>
+                    </div>
+                    <div class="m-column img-column">
+                      <a href="#"
+                        ><img
+                          src="/images/files/menu-3-1_af01c143-339d-495b-b356-89ddfb576b12_2000x546d.jpg"
+                          alt=""
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="/images/files/menu-3-1_af01c143-339d-495b-b356-89ddfb576b12_2000x546d.jpg"
+                          alt=""
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="/images/files/menu-3-1_af01c143-339d-495b-b356-89ddfb576b12_2000x546d.jpg"
+                          alt=""
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="/images/files/menu-3-1_af01c143-339d-495b-b356-89ddfb576b12_2000x546d.jpg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-dropdown">
+                <button class="dropbtn normal-menu-item">
+                  محافظت از بدن
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-dropdown">
+                <button class="dropbtn normal-menu-item">
+                  محافظت از پوست
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-dropdown">
+                <button class="dropbtn normal-menu-item">
+                  آرایش صورت
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-dropdown">
+                <button class="dropbtn normal-menu-item">
+                  کاتالوگ
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-dropdown">
+                <button
+                  style="color: #fc4c4b;"
+                  class="dropbtn active-menu-item"
+                >
+                  صفحات
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="sheena-logo" href="#">
+            <img src="./images/t/5/assets/logo6934.png" alt="" />
+          </a>
+        </div>
+      </header>
+    </div>
+    <div style="position: relative;" class="page-container">
+      <div class="header-type-3">
+        <div class="grid-uniform">
+          <div class="container-bg flex">
+            <ul class="home-social-media">
+              <li><a href="#">twitter</a></li>
+              <li><a href="#">facebook</a></li>
+              <li><a href="#">instagram</a></li>
+            </ul>
+            <div class="image-container flex">
+              <img
+                class="icon-image"
+                src="./images/files/slider-1_1000x1d06.jpg"
+                alt=""
+              />
+            </div>
+            <div class="icon-wrapper">
+              <div class="icon-content flex">
+                <h2>محصولات جدید 1399</h2>
+                <h3>محصولات</h3>
+              </div>
+              <a class="m-btn" href="#">خرید کن </a>
+            </div>
+            <ul class="slick-slider">
+              <li class="active"><a class="color-black" href="#">01</a></li>
+              <li><a href="#">02</a></li>
+              <li><a href="#">03</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="category-listing">
+        <div class="invisible-large"></div>
+        <div class="category-list container flex">
+          <div class="category-list-icons flex">
+            <a class="cat-img" href="#"
+              ><img src="./images/files/icon-699a2.png" alt=""
+            /></a>
+            <a class="cat-button" href="#">  محصولات</a>
+          </div>
+          <div class="category-list-icons flex">
+            <a class="cat-img" href="#"
+              ><img src="./images/files/icon-52a80.png" alt=""
+            /></a>
+            <a class="cat-button" href="#"> محصولات</a>
+          </div>
+          <div class="category-list-icons flex">
+            <a class="cat-img" href="#"
+              ><img src="./images/files/icon-44681.png" alt=""
+            /></a>
+            <a class="cat-button" href="#"> محصولات</a>
+          </div>
+          <div class="category-list-icons flex">
+            <a class="cat-img" href="#"
+              ><img src="./images/files/icon-39343.png" alt=""
+            /></a>
+            <a class="cat-button" href="#"> محصولات</a>
+          </div>
+          <div class="category-list-icons flex">
+            <a class="cat-img" href="#"
+              ><img src="./images/files/icon-2228c.png" alt=""
+            /></a>
+            <a class="cat-button" href="#"> محصولات</a>
+          </div>
+          <div class="category-list-icons flex">
+            <a class="cat-img" href="#"
+              ><img src="./images/files/icon-15b6f.png" alt=""
+            /></a>
+            <a class="cat-button" href="#"> محصولات</a>
+          </div>
+        </div>
+        <div class="invisible-large"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="right-top-sec">
+              <a class="flex right-img-overlay" href="#"
+                ><img
+                  class="img-scale"
+                  src="/images/files/img-3_95effcff-91ea-4b55-b2d4-bfcda4ac1235_1920X738b.jpg"
+                  alt=""
+              /></a>
+              <div class="top-second-div">
+                <h5 style="color: #000000;">جدید</h5>
+                <h2 style="color: #ffffff;">محصولات ما</h2>
+                <a
+                  class="ACTIVE-BTN"
+                  href="collections/all.html"
+                  style="color: #ffffff; background: #ca6786;"
+                >
+                  خرید کردن</a
+                >
+              </div>
+            </div>
+            <div class="right-top-sec mar-top-20">
+              <a class="flex right-img-overlay" href="#"
+                ><img
+                  class="img-scale"
+                  src="/images/files/img-3_95effcff-91ea-4b55-b2d4-bfcda4ac1235_1920X738b.jpg"
+                  alt=""
+              /></a>
+              <div class="top-second-div">
+                <h5 style="color: #000000;">جدید</h5>
+                <h2 style="color: #ffffff;">محصولات ما</h2>
+                <a
+                  class="ACTIVE-BTN"
+                  href="collections/all.html"
+                  style="color: #ffffff; background: #ca6786;"
+                >
+                  خرید کردن</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="center-section">
+              <a
+                style="position: relative; z-index: 1; overflow: hidden;"
+                href="#"
+              >
+                <img
+                  class="center-img img-scale"
+                  src="./images/files/img-5_2112b369-8c54-46b1-a9dd-caf9b2e51721_1920X5b80.jpg"
+                  alt=""
+                />
+              </a>
+              <div style="text-align: right;" class="featured-content">
+                <h5 style="color: #000000;text-align: right;">پیشنهاد بزرگ میلیونی</h5>
+                <h2 style="color: #e4635b;">مراقبت از بدن و پوست</h2>
+                <a
+                  class="ACTIVE-BTN"
+                  href="collections/all.html"
+                  style="color: #ffffff; background: #d48c02;"
+                  >خرید کن </a
+                >
+              </div>
+              <p class="additional-text" style="color: #000000;">
+                20% <span>تخفیف</span>
+              </p>
+            </div>
+          </div>
+           <div class="col-md-4 col-sm-12">
+            <div class="right-top-sec">
+              <a class="flex right-img-overlay" href="#"
+                ><img
+                  class="img-scale"
+                  src="/images/files/img-3_95effcff-91ea-4b55-b2d4-bfcda4ac1235_1920X738b.jpg"
+                  alt=""
+              /></a>
+              <div class="top-second-div">
+                <h5 style="color: #000000;">جدید</h5>
+                <h2 style="color: #ffffff;">محصولات ما</h2>
+                <a
+                  class="ACTIVE-BTN"
+                  href="collections/all.html"
+                  style="color: #ffffff; background: #ca6786;"
+                >
+                  خرید کردن</a
+                >
+              </div>
+            </div>
+            <div class="right-top-sec mar-top-20">
+              <a class="flex right-img-overlay" href="#"
+                ><img
+                  class="img-scale"
+                  src="/images/files/img-3_95effcff-91ea-4b55-b2d4-bfcda4ac1235_1920X738b.jpg"
+                  alt=""
+              /></a>
+              <div class="top-second-div">
+                <h5 style="color: #000000;">جدید</h5>
+                <h2 style="color: #ffffff;">محصولات ما</h2>
+                <a
+                  class="ACTIVE-BTN"
+                  href="collections/all.html"
+                  style="color: #ffffff; background: #ca6786;"
+                >
+                  خرید کردن</a
+                >
+              </div>
+            </div>
+          </div>
+      </div>
+      
+    </div>
+    <div class="shopify-section container">
+      <div class="invisible-large"></div>
+      <div class="border-title flex">
+        <h2 style="margin-bottom: 0;">ویژگی های</h2>
+        <h2 style="margin-top: 0;">جذاب و منحصر به فرد </h2>
+        <p>
+         
+          لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی
+          و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+        
+        </p>
+      </div>
+      <div class="slick-list-draggable owl-carousel first-carousel owl-theme">
+        <div class="slick-item item">
+          <div style="position: relative;">
+            <a class="img-show" href="#"
+              ><img
+                class="img-reveal"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <a class="img-hid" href="#"
+              ><img
+                class="img-show"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <div class="product-button flex">
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+            <a href="#" class="product-view-btn">نگاه اجمالی</a>
+          </div>
+          <div class="product-detail">
+            <a href="#">رز لب براق</a>
+            <span style="display: flex;flex-direction: row-reverse;justify-content: center;"><span> 20000</span><span>تومان</span></span>
+          </div>
+        </div>
+        <div class="slick-item item">
+          <div style="position: relative;">
+            <a class="img-show" href="#"
+              ><img
+                class="img-reveal"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <a class="img-hid" href="#"
+              ><img
+                class="img-show"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <div class="product-button flex">
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+            <a href="#" class="product-view-btn">نگاه اجمالی</a>
+          </div>
+          <div class="product-detail">
+            <a href="#">رز لب براق</a>
+            <span style="display: flex;justify-content: center;flex-direction: row;">
+              <span>تومان</span>
+              <span> 300.00</span>
+              <span
+                style="
+                  text-decoration: line-through;
+                  margin-left: 2px;
+                  font-weight: 500;
+                  font-size: 18px;
+                "
+              >
+                780.00</span
+              >
+            </span>
+            </div>
+        </div>
+        <div class="slick-item item big-slick-item">
+          <div style="position: relative;">
+            <a class="img-show" href="#"
+              ><img
+                class="img-reveal"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <a class="img-hid" href="#"
+              ><img
+                class="img-show"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <div class="product-button flex">
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+            <a href="#" class="product-view-btn">نگاه اجمالی</a>
+          </div>
+          <div class="product-detail">
+            <a style="color: #fc4c4b; display: block;font-weight: 700;" href="#"
+              >رز لب براق</a
+            >
+            <span style="display: flex;justify-content: center;flex-direction: row;">
+              <span>تومان</span>
+              <span style="color: #131313;"> 300.00</span>
+              <span
+                style="
+                  text-decoration: line-through;
+                  margin-left: 2px;
+                  font-weight: 500;
+                  font-size: 18px;
+                "
+              >
+                780.00</span
+              >
+            </span>
+          </div>
+        </div>
+        <div class="slick-item item">
+          <div style="position: relative;">
+            <a class="img-show" href="#"
+              ><img
+                class="img-reveal"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <a class="img-hid" href="#"
+              ><img
+                class="img-show"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <div class="product-button flex">
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+            <a href="#" class="product-view-btn">نگاه اجمالی</a>
+          </div>
+          <div class="product-detail">
+            <a href="#">رز لب براق</a>
+            <span style="display: flex;justify-content: center;flex-direction: row;">
+              <span>تومان</span>
+              <span> 300.00</span>
+              <span
+                style="
+                  text-decoration: line-through;
+                  margin-left: 2px;
+                  font-weight: 500;
+                  font-size: 18px;
+                "
+              >
+                780.00</span
+              >
+            </span>
+          </div>
+        </div>
+        <div class="slick-item item">
+          <div style="position: relative;">
+            <a class="img-show" href="#"
+              ><img
+                class="img-reveal"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <a class="img-hid" href="#"
+              ><img
+                class="img-show"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <div class="product-button flex">
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+            <a href="#" class="product-view-btn">نگاه اجمالی</a>
+          </div>
+          <div class="product-detail">
+            <a href="#">رز لب براق</a>
+            <span style="display: flex;justify-content: center;flex-direction: row;">
+              <span>تومان</span>
+              <span> 300.00</span>
+            </span>
+          </div>
+        </div>
+        <div class="slick-item item">
+          <div style="position: relative;">
+            <a class="img-show" href="#"
+              ><img
+                class="img-reveal"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <a class="img-hid" href="#"
+              ><img
+                class="img-show"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <div class="product-button flex">
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+            <a href="#" class="product-view-btn">نگاه اجمالی</a>
+          </div>
+          <div class="product-detail">
+            <a href="#">رز لب براق</a>
+            <span> $212.00</span>
+          </div>
+        </div>
+        <div class="slick-item item">
+          <div style="position: relative;">
+            <a class="img-show" href="#"
+              ><img
+                class="img-reveal"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <a class="img-hid" href="#"
+              ><img
+                class="img-show"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <div class="product-button flex">
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+            <a href="#" class="product-view-btn">نگاه اجمالی</a>
+          </div>
+          <div class="product-detail">
+            <a href="#">رز لب براق</a>
+            <span> $212.00</span>
+          </div>
+        </div>
+        <div class="slick-item item">
+          <div style="position: relative;">
+            <a class="img-show" href="#"
+              ><img
+                class="img-reveal"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <a class="img-hid" href="#"
+              ><img
+                class="img-show"
+                src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                alt=""
+            /></a>
+            <div class="product-button flex">
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="product-btn" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+            <a href="#" class="product-view-btn">نگاه اجمالی</a>
+          </div>
+          <div class="product-detail">
+            <a href="#">رز لب براق</a>
+            <span> $212.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-loop-nav">
+        <a class="circle-right circle" href="#"
+          ><i class="fas fa-arrow-left"></i
+        ></a>
+        <a class="circle-left circle" href="#"
+          ><i style="position: relative;" class="fas fa-arrow-left"></i
+        ></a>
+      </div>
+    </div>
+    <div class="full-width-tab bg-1">
+      <div class="border-title">
+        <h2 class="top-h2" style="display: block;">بهترین</h2>
+        <h2 style="display: block;">محصولات ترند</h2>
+        <div class="trending-buttons">
+          <a class="ACTIVE-BTN" href="#">ترند شده ها</a>
+          <a style="margin: 0 15px;" class="normal-btn" href="#"
+            >پر فروش ها</a
+          >
+          <a class="normal-btn" href="#">محصولات جدید</a>
+        </div>
+      </div>
+      <div class="second-slider">
+        <div class="slick-list-draggable-1 flex">
+          <div class="slick-item-1">
+            <div style="position: relative;">
+              <a class="img-show" href="#"
+                ><img
+                  class="img-reveal"
+                  src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                  alt=""
+              /></a>
+              <a class="img-hid" href="#"
+                ><img
+                  class="img-show"
+                  src="./images/products/product21_55112847-1519-4240-bef0-758f6288245c_large6590.jpg"
+                  alt=""
+              /></a>
+              <div class="product-button flex">
+                <a class="product-btn" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+                <a class="product-btn" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+                <a class="product-btn" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+              <a href="#" class="product-view-btn-1">نگاه اجمالی</a>
+            </div>
+            <div class="product-detail-1">
+              <a href="#">رز لب براق</a>
+              <span> $300.00</span>
+              <span
+                style="
+                  text-decoration: line-through;
+                  margin-left: 2px;
+                  font-weight: 500;
+                  font-size: 18px;
+                "
+              >
+                $780.00</span
+              >
+            </div>
+          </div>
+          <div class="slick-item-1">
+            <div style="position: relative;">
+              <a class="img-show" href="#"
+                ><img
+                  class="img-reveal"
+                  src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                  alt=""
+              /></a>
+              <a class="img-hid" href="#"
+                ><img
+                  class="img-show"
+                  src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                  alt=""
+              /></a>
+              <div class="product-button flex">
+                <a class="product-btn" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+                <a class="product-btn" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+                <a class="product-btn" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+              <a href="#" class="product-view-btn-1">نگاه اجمالی</a>
+            </div>
+            <div class="product-detail-1">
+              <a href="#">رز لب براق</a>
+              <span> $300.00</span>
+              <span
+                style="
+                  text-decoration: line-through;
+                  margin-left: 2px;
+                  font-weight: 500;
+                  font-size: 18px;
+                "
+              >
+                $780.00</span
+              >
+            </div>
+          </div>
+          <div class="slick-item-1">
+            <div style="position: relative;">
+              <a class="img-show" href="#"
+                ><img
+                  class="img-reveal"
+                  src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                  alt=""
+              /></a>
+              <a class="img-hid" href="#"
+                ><img
+                  class="img-show"
+                  src="./images/products/product34_6345d4a8-e947-42a8-a500-9e4f82d0cb55_large6590.jpg"
+                  alt=""
+              /></a>
+              <div class="product-button flex">
+                <a class="product-btn" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+                <a class="product-btn" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+                <a class="product-btn" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+              <a href="#" class="product-view-btn-1">نگاه اجمالی</a>
+            </div>
+            <div class="product-detail-1">
+              <a href="#">رز لب براق</a>
+              <span> 300.00</span>
+              <span
+                style="
+                  text-decoration: line-through;
+                  margin-left: 2px;
+                  font-weight: 500;
+                  font-size: 18px;
+                "
+              >
+                780.00</span
+              >
+              <span>تومان</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-loop-nav">
+          <a class="circle-right circle" href="#"
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+          <a class="circle-left circle" href="#"
+            ><i style="position: relative;" class="fas fa-arrow-left"></i
+          ></a>
+        </div>
+      </div>
+      <div class="border-title pad200">
+        <h2 class="top-h2" style="display: block;"> دسته بندی های</h2>
+        <h2 style="display: block;">خاص</h2>
+      </div>
+      <div class="third-slider flex">
+        <div class="third-slider-img" style="margin-right: 50px;">
+          <a class="hover-red" style="position: relative;" href="#"
+            ><img src="/images/collections/img-9_grandef4e5.jpg" alt=""
+          /></a>
+          <div class="collection-detail">
+            <span class="collection-top">آرایش</span>
+            <p>-<span> 11 </span>مورد-</p>
+          </div>
+        </div>
+        <div class="third-slider-img">
+          <a class="hover-red" style="position: relative;" href="#"
+            ><img src="/images/collections/img-9_grandef4e5.jpg" alt=""
+          /></a>
+          <div class="collection-detail">
+            <span class="collection-top">آرایش</span>
+            <p>-<span> 11 </span>مورد-</p>
+          </div>
+        </div>
+        <div class="third-slider-img" style="margin-left: 50px;">
+          <a class="hover-red" style="position: relative;" href="#"
+            ><img src="/images/collections/img-9_grandef4e5.jpg" alt=""
+          /></a>
+          <div class="collection-detail">
+            <span class="collection-top">آرایش</span>
+            <p>-<span> 11 </span>مورد-</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="quotes-section">
+      <div class="border-title">
+        <h2 class="top-h2" style="display: block;">مشتریان ما</h2>
+        <h2 style="display: block;">چه میگویند</h2>
+      </div>
+      <div class="quotes-middle flex">
+        <div class="quotes-slider flex">
+          <div style="opacity: 0.4;" class="personal-card">
+            <p>
+              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی
+              و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+            </p>
+            <div class="personal-info flex">
+              <img
+                class="quote-icon"
+                src="/images/files/client-1_100x_5ade4c2a-c546-41db-a5f6-28bb15b02f14_70xcce1.jpg"
+                alt=""
+              />
+              <div style="margin: 8px;" class="flex column">
+                <span class="quote-author">نام نویسنده</span>
+                <span class="quote-job">شغل نویسنده</span>
+              </div>
+            </div>
+          </div>
+          <div  class="personal-card">
+            <p>
+              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی
+              و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+            </p>
+            <div class="personal-info flex">
+              <img
+                class="quote-icon"
+                src="/images/files/client-1_100x_5ade4c2a-c546-41db-a5f6-28bb15b02f14_70xcce1.jpg"
+                alt=""
+              />
+              <div style="margin: 8px;" class="flex column">
+                <span class="quote-author">نام نویسنده</span>
+                <span class="quote-job">شغل نویسنده</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quotes-clients">
+          <div class="client-slick-slide icon-1">
+            <img
+              src="/images/files/client-1_100x_5ade4c2a-c546-41db-a5f6-28bb15b02f14_70xcce1.jpg"
+              alt=""
+              class="quote-icon"
+            />
+          </div>
+          <div class="client-slick-slide icon-2">
+            <img
+              src="/images/files/client-1_100x_5ade4c2a-c546-41db-a5f6-28bb15b02f14_70xcce1.jpg"
+              alt=""
+              class="quote-icon"
+            />
+          </div>
+          <div class="icon-3">
+            <img
+              src="/images/files/client-1_100x_5ade4c2a-c546-41db-a5f6-28bb15b02f14_70xcce1.jpg"
+              alt=""
+              class="quote-icon"
+            />
+          </div>
+          <div class="icon-4">
+            <img
+              src="/images/files/client-1_100x_5ade4c2a-c546-41db-a5f6-28bb15b02f14_70xcce1.jpg"
+              alt=""
+              class="quote-icon"
+            />
+          </div>
+          <div class="client-slick-slide icon-5">
+            <img
+              src="/images/files/client-1_100x_5ade4c2a-c546-41db-a5f6-28bb15b02f14_70xcce1.jpg"
+              alt=""
+              class="quote-icon"
+            />
+          </div>
+          <div class="client-slick-slide icon-6">
+            <img
+              src="/images/files/client-1_100x_5ade4c2a-c546-41db-a5f6-28bb15b02f14_70xcce1.jpg"
+              alt=""
+              class="quote-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="product-loop-nav">
+        <a class="circle-right circle" href="#"
+          ><i class="fas fa-arrow-left"></i
+        ></a>
+        <a class="circle-left circle" href="#"
+          ><i style="position: relative;" class="fas fa-arrow-left"></i
+        ></a>
+      </div>
+    </div>
+    <div class="wide-banner">
+      <div class="wide-banner-content">
+        <h6>روز جادویی با 30% تخفیف</h6>
+        <h4>ترند ها در فشن</h4>
+        <p>بهترین راز های فاش نشده</p>
+        <a href="#">حالا خرید کن</a>
+      </div>
+    </div>
+    <div class="latest-news">
+      <div style="margin-top: 50px;" class="border-title flex">
+        <h2 style="margin-bottom: 0;">آخرین</h2>
+        <h2 style="margin-top: 0;">خبرهای ما</h2>
+      </div>
+      <div class="article flex">
+        <div class="flex pad-20" style="flex-direction: row-reverse;">
+          <div class="article-img article-img-hover">
+            <a class="" style="position: relative;" href="#"
+              ><img
+                src="/images/articles/blog-2_56570218-c21b-4472-9e3c-fd275908fc5c_1024x1024c978.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="article-info">
+            <div class="blogs-subtitle flex">
+              <div class="blog-date">
+                <i class="far fa-calendar"></i>
+                <span>21 شهریور 1398</span>
+              </div>
+              <p class="author">
+                <i class="far fa-user"></i>
+                <span>محمد</span>
+              </p>
+            </div>
+            <div class="home-blog-content">
+              <a href="#">
+                لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی
+                آزمایشی و بی‌معنی در صنعت چاپ</a
+              >
+              <p></p>
+            </div>
+            <div class="article-bot-div flex">
+              <a style="font-weight: 700;" href="#" class="ACTIVE-BTN btn-res"
+                >مشاهده جزییات</a
+              >
+              <p>
+                0
+                <i class="fa fa-eye eye"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex pad-20" style="flex-direction: row-reverse;">
+          <div class="article-img article-img-hover">
+            <a class="" style="position: relative;" href="#"
+              ><img
+                src="/images/articles/blog-2_56570218-c21b-4472-9e3c-fd275908fc5c_1024x1024c978.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="article-info">
+            <div class="blogs-subtitle flex">
+              <div class="blog-date">
+                <i class="far fa-calendar"></i>
+                <span>21 شهریور 1398</span>
+              </div>
+              <p class="author">
+                <i class="far fa-user"></i>
+                <span>محمد</span>
+              </p>
+            </div>
+            <div class="home-blog-content">
+              <a href="#">
+                لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی
+                آزمایشی و بی‌معنی در صنعت چاپ</a
+              >
+              <p></p>
+            </div>
+            <div class="article-bot-div flex">
+              <a style="font-weight: 700;" href="#" class="ACTIVE-BTN btn-res"
+                >مشاهده جزییات</a
+              >
+              <p>
+                0
+                <i class="fa fa-eye eye"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 80px;" class="product-loop-nav">
+        <a class="circle-right circle" href="#"
+          ><i class="fas fa-arrow-left"></i
+        ></a>
+        <a class="circle-left circle" href="#"
+          ><i style="position: relative;" class="fas fa-arrow-left"></i
+        ></a>
+      </div>
+    </div>
+    <div class="section-seven flex">
+      <div class="m-item">
+        <a href="#"
+          ><img src="/images/files/client-4_250x250356e.png" alt=""
+        /></a>
+      </div>
+      <div class="m-item">
+        <a href="#"
+          ><img src="/images/files/client-5_250x250f604.png" alt=""
+        /></a>
+      </div>
+      <div class="m-item">
+        <a href="#"
+          ><img src="/images/files/client-6_250x250c9f2.png" alt=""
+        /></a>
+      </div>
+      <div class="m-item">
+        <a href="#"
+          ><img src="/images/files/client-2_250x2505d72.png" alt=""
+        /></a>
+      </div>
+      <div class="m-item">
+        <a href="#"
+          ><img src="/images/files/client-1_250x250e1e7.png" alt=""
+        /></a>
+      </div>
+    </div>
+    <div class="support flex">
+      <div class="sup-item">
+        <div style="text-align: center;">
+          <a href="#"><i class="fas sup-icons fa-shipping-fast"></i></a>
+        </div>
+        <div class="sup-info">
+          <h4>ارسال رایگان به سراسر جهان</h4>
+          <p>
+            لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
+            بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+          </p>
+        </div>
+      </div>
+      <div class="sup-item">
+        <div style="text-align: center;">
+          <a href="#"><i class="fas sup-icons fa-gift"></i></a>
+        </div>
+        <div class="sup-info">
+          <h4>ارسال رایگان به سراسر جهان</h4>
+          <p>
+            لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
+            بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+          </p>
+        </div>
+      </div>
+      <div class="sup-item">
+        <div style="text-align: center;">
+          <a href="#"><i class="fas sup-icons fa-shield-alt"></i></a>
+        </div>
+        <div class="sup-info">
+          <h4>ارسال رایگان به سراسر جهان</h4>
+          <p>
+            لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
+            بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+          </p>
+        </div>
+      </div>
+      <div class="sup-item">
+        <div style="text-align: center;">
+          <a href="#"><i class="fas sup-icons fa-headset"></i></a>
+        </div>
+        <div class="sup-info">
+          <h4>ارسال رایگان به سراسر جهان</h4>
+          <p>
+            لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
+            بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="newsletter">
+      <div style="width: 60%; margin: 50px auto;">
+        <div class="newsletter-container">
+          <div class="border-title flex">
+            <h2 style="margin-bottom: 0;">خبرنامه</h2>
+            <h2 style="margin-top: 0;">به ما بپیوندید</h2>
+          </div>
+          <p>
+            برای خرید بعدی خود در این ماه 20% تخفیف بکیرید
+          </p>
+          <div class="newsletter-email">
+            <input type="email" placeholder="آدرس پست الکترونیکی" />
+            <a href="#" class="ACTIVE-BTN">قبول کردن</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-contents flex">
+        <div class="footer-logo">
+          <img src="/images/files/light-logo_400xa518.png" alt="" />
+          <p style="color: #ffffff;">
+            لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
+            بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+          </p>
+        </div>
+        <div class="footer-navs">
+          <h4>اطلاعات</h4>
+          <ul>
+            <li><a class="footer-links" href="#">آیتم شماره 1</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 2</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 3</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 4</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 5</a></li>
+          </ul>
+        </div>
+        <div class="footer-navs">
+          <h4>اطلاعات</h4>
+          <ul>
+            <li><a class="footer-links" href="#">آیتم شماره 1</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 2</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 3</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 4</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 5</a></li>
+          </ul>
+        </div>
+        <div class="footer-navs">
+          <h4>اطلاعات</h4>
+          <ul>
+            <li><a class="footer-links" href="#">آیتم شماره 1</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 2</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 3</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 4</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 5</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="copy-right">
+        <p class="copyright-txt">
+          Copyright © 2020, Sheena Cosmetics
+          <a href="#">Powered by Shopify</a>
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".first-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@ v24.2.0/dist/font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="ham-menu-side">
+        <ul >
+          <li><a href="#">آیتم 1</a></li>
+          <li><a href="#">آیتم 1</a></li>
+          <li><a href="#">آیتم 1</a></li>
+          <li><a href="#">آیتم 1</a></li>
+          <li><a href="#">آیتم 1</a></li>
+          <li><a href="#">آیتم 1</a></li>
+        </ul>
+      </div>
+      <header class="site-header">
+        <div class="nav-container flex">
+          <div class="menubar-section flex">
+            <div onclick="hamburgerMenu()" class="hamburger-menu flex flex-column">
+              <div class="ham-menu-lines"></div>
+              <div class="ham-menu-lines"></div>
+              <div class="ham-menu-lines"></div>
+            </div>
+            <ul class="menu-icon">
+              <li>
+                <a href="#"><span class="fa fa-search"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-user"></span></a>
+              </li>
+              <li>
+                <a style="position: relative; top: -12px;" href="#">
+                  <span class="fas shopping fa-shopping-bag"></span>
+                  <div id="cartCount">0</div>
+                </a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-heart"></span></a>
+              </li>
+            </ul>
+            <div class="mega-menu m-navbar flex">
+              <a class="current-menu-item" href="#"> خانه</a>
+              <div class="m-dropdown">
+                <button class="dropbtn normal-menu-item">
+                  آرایش
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>نسخه آزمایشی</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>دسته بندی</h3>
+                      <a href="#">آیتم</a>
+                      <a href="#">آیتم </a>
+                      <a href="#">آیتم </a>
+                    </div>
+                    <div class="m-column">
+                      <h3>محصولات</h3>
+                      <a href="#">آیتم </a>
+                      <a href="#">آیتم </a>
+                      <a href="#">آیتم </a>
+                    </div>
+                    <div class="m-column img-column">
+                      <a href="#"
+                        ><img
+                          src="/images/files/menu-3-1_af01c143-339d-495b-b356-89ddfb576b12_2000x546d.jpg"
+                          alt=""
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="/images/files/menu-3-1_af01c143-339d-495b-b356-89ddfb576b12_2000x546d.jpg"
+                          alt=""
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="/images/files/menu-3-1_af01c143-339d-495b-b356-89ddfb576b12_2000x546d.jpg"
+                          alt=""
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="/images/files/menu-3-1_af01c143-339d-495b-b356-89ddfb576b12_2000x546d.jpg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-dropdown">
+                <button class="dropbtn normal-menu-item">
+                  محافظت از بدن
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-dropdown">
+                <button class="dropbtn normal-menu-item">
+                  محافظت از پوست
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-dropdown">
+                <button class="dropbtn normal-menu-item">
+                  آرایش صورت
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-dropdown">
+                <button class="dropbtn normal-menu-item">
+                  کاتالوگ
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-dropdown">
+                <button
+                  style="color: #fc4c4b;"
+                  class="dropbtn active-menu-item"
+                >
+                  صفحات
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>
+                  <div class="m-row">
+                    <div class="m-column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="m-column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="sheena-logo" href="#">
+            <img src="./images/t/5/assets/logo6934.png" alt="" />
+          </a>
+        </div>
+      </header>
+    </div>
+    <div class="breadcrumb">
+      <div style="text-align: center;" class="container breadcrumb-container">
+        <h1 class="d-block">تماس با ما</h1>
+        <a href="#">خانه </a>
+        <span>/</span>
+        <span>تماس</span>
+      </div>
+    </div>
+    <div class="container">
+      <div id="map">
+        <iframe
+          width="100%"
+          height="578"
+          style="border: 0; overflow: hidden;"
+          src="https://maps.google.co.in/?ie=UTF8&amp;t=m&amp;ll=-37.823006,144.977388&amp;spn=0.02034,0.042915&amp;z=14&amp;output=embed"
+        ></iframe>
+      </div>
+      <div class="container mar-80 d-flex"></div>
+        <div style="justify-content: space-evenly;" class="row fullWidth">
+            <div class="contacts-detail-divs col-md-3 d-flex flex-column">
+                <div class="circle-black-bg">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <h4 class="mar-20">تلفن</h4>
+                <p class="mar-20">
+                  <b>تلفن:</b>
+                  021-88888888
+                  <p> <b>فکس</b>
+                      0803-405-405
+                  </p>
+                </p>
+              </div>
+              <div class="contacts-detail-divs col-md-3 d-flex flex-column">
+                <div class="circle-black-bg">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <h4 class="mar-20">ایمیل</h4>
+                <p class="mar-20">
+                 abc@gmail.com
+                  <p> 
+                      support@gmail.com
+                  </p>
+                </p>
+              </div>
+              <div class="contacts-detail-divs col-md-3 d-flex flex-column">
+                <div class="circle-black-bg">
+                  <i class="fa fa-location-arrow"></i>
+                </div>
+                <h4 class="mar-20">آدرس</h4>
+                <p style="text-align: center;" class="mar-20">
+                  تهران خیابان ولیعصر تقاطع میرداماد پاساژ پایتخت طبقه همکف پلاک 7
+                </p>
+              </div>
+        </div>
+      </div>
+      <div class="contact-page-information d-flex flex-column mar-80 center-all">
+        <h3>فرم ثبت نظرات</h3>
+        <form class="fullWidth d-flex flex-column center-all mar-80" action="">
+            <input class="contact-page-inputs" type="text" name="" id="" placeholder="نام">
+            <input class="contact-page-inputs" type="text" name="" id="" placeholder="ایمیل">
+            <input class="contact-page-inputs" type="text" name="" id="" placeholder="موضوع">
+            <input class="contact-page-inputs min-height-140" type="text" name="" id="" placeholder="پیام">
+            <button class="contacts-page-btn" type="submit">ارسال</button>
+        </form>
+      </div>
+    </div>
+    <footer class="mar-80">
+      <div class="footer-contents flex">
+        <div class="footer-logo">
+          <img src="/images/files/light-logo_400xa518.png" alt="" />
+          <p style="color: #ffffff;">
+            لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
+            بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+          </p>
+        </div>
+        <div class="footer-navs">
+          <h4>اطلاعات</h4>
+          <ul>
+            <li><a class="footer-links" href="#">آیتم شماره 1</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 2</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 3</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 4</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 5</a></li>
+          </ul>
+        </div>
+        <div class="footer-navs">
+          <h4>اطلاعات</h4>
+          <ul>
+            <li><a class="footer-links" href="#">آیتم شماره 1</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 2</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 3</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 4</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 5</a></li>
+          </ul>
+        </div>
+        <div class="footer-navs">
+          <h4>اطلاعات</h4>
+          <ul>
+            <li><a class="footer-links" href="#">آیتم شماره 1</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 2</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 3</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 4</a></li>
+            <li><a class="footer-links" href="#">آیتم شماره 5</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="copy-right">
+        <p class="copyright-txt">
+          Copyright © 2020, Sheena Cosmetics
+          <a href="#">Powered by Shopify</a>
+        </p>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
