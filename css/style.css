@@ -1373,8 +1373,9 @@ a {
 }
 .newsletter-email a {
   position: relative;
-  right: -4px;
-  padding: 21px 25px;
+  top: -1px;
+  right: -5px;
+  padding: 18px 25px;
 }
 .newsletter-email input {
   display: inline-block;
