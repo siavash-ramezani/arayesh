@@ -34,6 +34,9 @@ img {
 a {
   text-decoration: none;
 }
+.mar-side-15 {
+  margin: 0 15px;
+}
 .page-container {
   max-width: 100%;
   clear: both;
@@ -1469,6 +1472,7 @@ footer {
 /*  */
 .right-top-sec {
   position: relative;
+  margin: 3px 0;
 }
 .right-img-overlay {
   position: relative;
@@ -2035,8 +2039,11 @@ input::-webkit-inner-spin-button {
   footer {
     background-repeat: repeat !important;
   }
+  .support {
+    flex-wrap: wrap;
+  }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .contact-page-inputs {
     width: 90%;
   }
@@ -2063,5 +2070,109 @@ input::-webkit-inner-spin-button {
   }
   .nav-container {
     width: 100%;
+  }
+  .wide-banner-content {
+    width: 300px;
+    height: 300px;
+  }
+  .wide-banner-content h6 {
+    margin-top: 10px;
+  }
+  .wide-banner-content h4 {
+    font-size: 20px;
+  }
+  .wide-banner-content p {
+    font-size: 20px;
+  }
+  .article-bot-div {
+    flex-wrap: wrap;
+  }
+  .quotes-slider {
+    flex-wrap: wrap;
+  }
+  .trending-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .trending-buttons a {
+    margin: 10px 0;
+  }
+  .mar-side-15 {
+    margin: 0;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .icon-image {
+    width: 100%;
+    margin-right: 0;
+  }
+  .home-social-media {
+    display: none;
+  }
+  .icon-wrapper {
+    right: 0;
+  }
+  .slick-list-draggable-1 .slick-item-1 .product-detail-1 a {
+    font-size: 12px;
+  }
+  .slick-list-draggable-1 .slick-item-1 .product-detail-1 span {
+    font-size: 12px !important;
+  }
+  .icon-content h2,
+  h3 {
+    color: #fff;
+  }
+  .m-btn {
+    color: #fff;
+  }
+  .m-btn::before {
+    background: #fff;
+  }
+  .quotes-section {
+    margin-top: 100%;
+  }
+  .dis-none-650 {
+    display: none;
+  }
+  .third-slider-img {
+    width: 80%;
+  }
+  .slick-list-draggable-1 .slick-item-1 {
+    width: auto;
+    margin: 5px;
+  }
+  .category-list-icons {
+    margin: 2px;
+  }
+  .section-seven {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .m-item {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .flex-col-500 {
+    flex-direction: column !important;
+  }
+  .article-img {
+    width: 90%;
+  }
+  .article-info {
+    width: 90%;
+    padding: 0;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .btn-res {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .center-section {
+    margin-top: 20px;
   }
 }
