@@ -112,3 +112,9 @@ function proShipping() {
   reviewSelect.classList.remove("current-discribe");
   shippingSelect.classList.add("current-discribe");
 }
+
+// function invenroryShow() {
+//   let inventory = document.querySelector(".product-table");
+//   inventory.style.display = "block";
+//   inventory.style.transitionDuration = "1s";
+// }

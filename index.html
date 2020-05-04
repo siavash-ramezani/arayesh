@@ -20,7 +20,7 @@
   <body>
     <div class="header-wrapper">
       <div class="ham-menu-side">
-        <ul >
+        <ul>
           <li><a href="#">آیتم 1</a></li>
           <li><a href="#">آیتم 1</a></li>
           <li><a href="#">آیتم 1</a></li>
@@ -32,19 +32,82 @@
       <header class="site-header">
         <div class="nav-container flex">
           <div class="menubar-section flex">
-            <div onclick="hamburgerMenu()" class="hamburger-menu flex flex-column">
+            <div
+              onclick="hamburgerMenu()"
+              class="hamburger-menu flex flex-column"
+            >
               <div class="ham-menu-lines"></div>
               <div class="ham-menu-lines"></div>
               <div class="ham-menu-lines"></div>
             </div>
+
             <ul class="menu-icon">
-              <li>
+              <li class="product-search-item">
+                <div class="nav-search-item d-flex flex-column center-all">
+                  <input
+                    class="nav-search-item-search"
+                    type="search"
+                    name=""
+                    id=""
+                    placeholder="جستجو"
+                  />
+                  <input
+                    class="nav-search-item-submit"
+                    type="submit"
+                    value=" ثبت"
+                  />
+                </div>
                 <a href="#"><span class="fa fa-search"></span></a>
               </li>
-              <li>
+              <li class="product-login-item">
+                <div class="log-in-content flex flex-column">
+                  <a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                    ورود
+                  </a>
+                  <a href="#">
+                    <i class="fas fa-user"></i>
+                    ثبت نام
+                  </a>
+                </div>
                 <a href="#"><span class="fas fa-user"></span></a>
               </li>
-              <li>
+              <li class="product-inventory-item">
+                <div class="product-table">
+                  <table>
+                    <tr>
+                      <th>نام محصول</th>
+                      <th>تعداد</th>
+                      <th>قیمت</th>
+                      <th>مجموع</th>
+                    </tr>
+                    <tr>
+                      <td>رژلب قرمز</td>
+                      <td>2</td>
+                      <td><span>3000</span> تومان</td>
+                      <td><span>6000</span> تومان</td>
+                    </tr>
+                    <tr>
+                      <td>رژلب قرمز</td>
+                      <td>2</td>
+                      <td><span>3000</span> تومان</td>
+                      <td><span>6000</span> تومان</td>
+                    </tr>
+                    <tr>
+                      <td>رژلب قرمز</td>
+                      <td>2</td>
+                      <td><span>3000</span> تومان</td>
+                      <td><span>6000</span> تومان</td>
+                    </tr>
+                    <tr>
+                      <td>رژلب قرمز</td>
+                      <td>2</td>
+                      <td><span>3000</span> تومان</td>
+                      <td><span>6000</span> تومان</td>
+                    </tr>
+                  </table>
+                  <button class="inventory-submit" type="submit">تایید</button>
+                </div>
                 <a style="position: relative; top: -12px;" href="#">
                   <span class="fas shopping fa-shopping-bag"></span>
                   <div id="cartCount">0</div>
