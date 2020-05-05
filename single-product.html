@@ -19,6 +19,23 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!--  -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!--  -->
   </head>
   <body>
     <div class="header-wrapper">
@@ -370,124 +387,142 @@
             </ul>
           </div>
           <div class="catalog-category">
-            <div style="border-bottom: 1px solid #dddddd;">
-              <span class="cat-arrow-down">پیشنهاد شگفت انگیز</span>
-            </div>
-            <ul
-              class="d-flex"
-              style="
-                margin-top: 20px;
-                overflow: hidden;
-                justify-content: center;
-                padding: 0;
-                position: relative;
-              "
+            <a
+              class="collapse-head-a"
+              href="#firstCollapse"
+              data-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#firstCollapse"
             >
-              <a class="sli-button sli-button-right" href="#"
-                ><i class="fa fa-angle-right"></i
-              ></a>
-              <a class="sli-button sli-button-left" href="#"
-                ><i class="fa fa-angle-left"></i
-              ></a>
-              <li>
-                <a class="flex" href="#"
-                  ><img src="/images/products/product36_350Xe5fb.jpg" alt=""
-                /></a>
-                <div class="single-product-slider-detail">
-                  <a class="product-red-view" href="#">رز لب براق</a>
-                  <span class="line-through">70.000</span>
-                  <span class="off-value">30.000</span>
-                  <span>تومان</span>
-                </div>
-              </li>
-            </ul>
+              <span class="cat-arrow-down">پیشنهاد شگفت انگیز</span>
+            </a>
+            <div class="collapse show" id="firstCollapse">
+              <ul
+                class="d-flex"
+                style="
+                  margin-top: 20px;
+                  overflow: hidden;
+                  justify-content: center;
+                  padding: 0;
+                  position: relative;
+                "
+              >
+                <a class="sli-button sli-button-right" href="#"
+                  ><i class="fa fa-angle-right"></i
+                ></a>
+                <a class="sli-button sli-button-left" href="#"
+                  ><i class="fa fa-angle-left"></i
+                ></a>
+                <li>
+                  <a class="flex" href="#"
+                    ><img src="/images/products/product36_350Xe5fb.jpg" alt=""
+                  /></a>
+                  <div class="single-product-slider-detail">
+                    <a class="product-red-view" href="#">رز لب براق</a>
+                    <span class="line-through">70.000</span>
+                    <span class="off-value">30.000</span>
+                    <span>تومان</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="catalog-category">
-            <div style="border-bottom: 1px solid #dddddd;">
+            <a
+              class="collapse-head-a"
+              href="#secondCollapse"
+              data-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#firstCollapse"
+            >
               <span class="cat-arrow-down"> پر فروش ترین ها </span>
+            </a>
+            <div class="collapse show" id="secondCollapse">
+              <ul style="margin-top: 10px; padding: 0;">
+                <li class="dashed-border pad-10">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="single-product-slider-detail right-align">
+                        <a class="right-align" href="#">ادکلن دولچی گابانا</a>
+                        <span class="line-through">70.000</span>
+                        <span class="off-value">30.000</span>
+                        <span>تومان</span>
+                      </div>
+                    </div>
+                    <div style="padding: 0;" class="col-md-3">
+                      <a href="#"
+                        ><img
+                          style="width: 100%;"
+                          src="/images/products/product21_small31bb.jpg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="dashed-border pad-10">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="single-product-slider-detail right-align">
+                        <a class="right-align" href="#">ادکلن دولچی گابانا</a>
+                        <span class="line-through">70.000</span>
+                        <span class="off-value">30.000</span>
+                        <span>تومان</span>
+                      </div>
+                    </div>
+                    <div style="padding: 0;" class="col-md-3">
+                      <a href="#"
+                        ><img
+                          style="width: 100%;"
+                          src="/images/products/product21_small31bb.jpg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="dashed-border pad-10">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="single-product-slider-detail right-align">
+                        <a class="right-align" href="#">ادکلن دولچی گابانا</a>
+                        <span class="line-through">70.000</span>
+                        <span class="off-value">30.000</span>
+                        <span>تومان</span>
+                      </div>
+                    </div>
+                    <div style="padding: 0;" class="col-md-3">
+                      <a href="#"
+                        ><img
+                          style="width: 100%;"
+                          src="/images/products/product21_small31bb.jpg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="dashed-border pad-10">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="single-product-slider-detail right-align">
+                        <a class="right-align" href="#">ادکلن دولچی گابانا</a>
+                        <span class="line-through">70.000</span>
+                        <span class="off-value">30.000</span>
+                        <span>تومان</span>
+                      </div>
+                    </div>
+                    <div style="padding: 0;" class="col-md-3">
+                      <a href="#"
+                        ><img
+                          style="width: 100%;"
+                          src="/images/products/product21_small31bb.jpg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <ul style="margin-top: 10px; padding: 0;">
-              <li class="dashed-border pad-10">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="single-product-slider-detail right-align">
-                      <a class="right-align" href="#">ادکلن دولچی گابانا</a>
-                      <span class="line-through">70.000</span>
-                      <span class="off-value">30.000</span>
-                      <span>تومان</span>
-                    </div>
-                  </div>
-                  <div style="padding: 0;" class="col-md-3">
-                    <a href="#"
-                      ><img
-                        style="width: 100%;"
-                        src="/images/products/product21_small31bb.jpg"
-                        alt=""
-                    /></a>
-                  </div>
-                </div>
-              </li>
-              <li class="dashed-border pad-10">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="single-product-slider-detail right-align">
-                      <a class="right-align" href="#">ادکلن دولچی گابانا</a>
-                      <span class="line-through">70.000</span>
-                      <span class="off-value">30.000</span>
-                      <span>تومان</span>
-                    </div>
-                  </div>
-                  <div style="padding: 0;" class="col-md-3">
-                    <a href="#"
-                      ><img
-                        style="width: 100%;"
-                        src="/images/products/product21_small31bb.jpg"
-                        alt=""
-                    /></a>
-                  </div>
-                </div>
-              </li>
-              <li class="dashed-border pad-10">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="single-product-slider-detail right-align">
-                      <a class="right-align" href="#">ادکلن دولچی گابانا</a>
-                      <span class="line-through">70.000</span>
-                      <span class="off-value">30.000</span>
-                      <span>تومان</span>
-                    </div>
-                  </div>
-                  <div style="padding: 0;" class="col-md-3">
-                    <a href="#"
-                      ><img
-                        style="width: 100%;"
-                        src="/images/products/product21_small31bb.jpg"
-                        alt=""
-                    /></a>
-                  </div>
-                </div>
-              </li>
-              <li class="dashed-border pad-10">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="single-product-slider-detail right-align">
-                      <a class="right-align" href="#">ادکلن دولچی گابانا</a>
-                      <span class="line-through">70.000</span>
-                      <span class="off-value">30.000</span>
-                      <span>تومان</span>
-                    </div>
-                  </div>
-                  <div style="padding: 0;" class="col-md-3">
-                    <a href="#"
-                      ><img
-                        style="width: 100%;"
-                        src="/images/products/product21_small31bb.jpg"
-                        alt=""
-                    /></a>
-                  </div>
-                </div>
-              </li>
-            </ul>
           </div>
           <div class="catalog-category">
             <ul style="margin-top: 50px; padding: 0;">

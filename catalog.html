@@ -19,6 +19,23 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!--  -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!--  -->
   </head>
   <body>
     <div class="header-wrapper">
@@ -370,130 +387,174 @@
             </ul>
           </div>
           <div class="catalog-category">
-            <div style="border-bottom: 1px solid #dddddd;">
+            <a
+              class="collapse-head-a"
+              href="#Collapseone"
+              data-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#Collapseone"
+            >
               <span class="cat-arrow-down">خرید بر اساس رنگ</span>
+            </a>
+            <div class="collapse show" id="Collapseone">
+              <ul class="color-choice d-flex">
+                <li>
+                  <input type="checkbox" name="" id="green" />
+                  <a class="color-style" href="#">
+                    <span class="color-span green"></span>
+                  </a>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="green" />
+                  <a class="color-style" href="#">
+                    <span class="color-span red"></span>
+                  </a>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="green" />
+                  <a class="color-style" href="#">
+                    <span class="color-span black"></span>
+                  </a>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="green" />
+                  <a class="color-style" href="#">
+                    <span class="color-span blue"></span>
+                  </a>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="green" />
+                  <a class="color-style" href="#">
+                    <span class="color-span sandal"></span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="color-choice d-flex">
-              <li>
-                <input type="checkbox" name="" id="green" />
-                <a class="color-style" href="#">
-                  <span class="color-span green"></span>
-                </a>
-              </li>
-              <li>
-                <input type="checkbox" name="" id="green" />
-                <a class="color-style" href="#">
-                  <span class="color-span red"></span>
-                </a>
-              </li>
-              <li>
-                <input type="checkbox" name="" id="green" />
-                <a class="color-style" href="#">
-                  <span class="color-span black"></span>
-                </a>
-              </li>
-              <li>
-                <input type="checkbox" name="" id="green" />
-                <a class="color-style" href="#">
-                  <span class="color-span blue"></span>
-                </a>
-              </li>
-              <li>
-                <input type="checkbox" name="" id="green" />
-                <a class="color-style" href="#">
-                  <span class="color-span sandal"></span>
-                </a>
-              </li>
-            </ul>
           </div>
           <div class="catalog-category">
-            <div style="border-bottom: 1px solid #dddddd;">
+            <a
+              class="collapse-head-a"
+              href="#Collapsetwo"
+              data-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#Collapsetwo"
+            >
               <span class="cat-arrow-down">خرید بر اساس قیمت</span>
+            </a>
+            <div class="collapse show" id="Collapsetwo">
+              <ul style="margin-top: 10px;">
+                <li>
+                  <input type="checkbox" id="shop-by-price1" value="100-200" />
+                  <label class="circle-label" for="shop-by-price1"
+                    >100تومان-200تومان</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price2" value="200-300" />
+                  <label class="circle-label" for="shop-by-price2"
+                    >200تومان-300تومان</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price3" value="300-500" />
+                  <label class="circle-label" for="shop-by-price3"
+                    >300تومان-400تومان</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price4" value="300-400" />
+                  <label class="circle-label" for="shop-by-price4"
+                    >400تومان-500تومان</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price5" value="700-1000" />
+                  <label class="circle-label" for="shop-by-price5"
+                    >500تومان-600تومان</label
+                  >
+                </li>
+              </ul>
             </div>
-            <ul style="margin-top: 10px;">
-              <li>
-                <input type="checkbox" id="shop-by-price1" value="100-200" />
-                <label class="circle-label" for="shop-by-price1"
-                  >100تومان-200تومان</label
-                >
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price2" value="200-300" />
-                <label class="circle-label" for="shop-by-price2"
-                  >200تومان-300تومان</label
-                >
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price3" value="300-500" />
-                <label class="circle-label" for="shop-by-price3"
-                  >300تومان-400تومان</label
-                >
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price4" value="300-400" />
-                <label class="circle-label" for="shop-by-price4"
-                  >400تومان-500تومان</label
-                >
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price5" value="700-1000" />
-                <label class="circle-label" for="shop-by-price5"
-                  >500تومان-600تومان</label
-                >
-              </li>
-            </ul>
           </div>
           <div class="catalog-category">
-            <div style="border-bottom: 1px solid #dddddd;">
+            <a
+              class="collapse-head-a"
+              href="#Collapsethree"
+              data-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#Collapsethree"
+            >
               <span class="cat-arrow-down">خرید بر اساس برند</span>
+            </a>
+            <div class="Collapse show" id="Collapsethree">
+              <ul style="margin-top: 10px;">
+                <li>
+                  <input type="checkbox" id="shop-by-price1" value="100-200" />
+                  <label class="circle-label" for="shop-by-price1"
+                    >سامسونگ</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price2" value="200-300" />
+                  <label class="circle-label" for="shop-by-price2">اپل</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price3" value="300-500" />
+                  <label class="circle-label" for="shop-by-price3">سونی</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price4" value="300-400" />
+                  <label class="circle-label" for="shop-by-price4"
+                    >شیاومی</label
+                  >
+                </li>
+              </ul>
             </div>
-            <ul style="margin-top: 10px;">
-              <li>
-                <input type="checkbox" id="shop-by-price1" value="100-200" />
-                <label class="circle-label" for="shop-by-price1">سامسونگ</label>
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price2" value="200-300" />
-                <label class="circle-label" for="shop-by-price2">اپل</label>
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price3" value="300-500" />
-                <label class="circle-label" for="shop-by-price3">سونی</label>
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price4" value="300-400" />
-                <label class="circle-label" for="shop-by-price4">شیاومی</label>
-              </li>
-            </ul>
           </div>
           <div class="catalog-category">
-            <div style="border-bottom: 1px solid #dddddd;">
+            <a
+              class="collapse-head-a"
+              href="#Collapsefour"
+              data-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#Collapsefour"
+            >
               <span class="cat-arrow-down">دسته بندی محصول</span>
+            </a>
+            <div class="collapse show" id="Collapsefour">
+              <ul style="margin-top: 10px;">
+                <li>
+                  <input type="checkbox" id="shop-by-price1" value="100-200" />
+                  <label class="circle-label" for="shop-by-price1"
+                    >موبایل</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price2" value="200-300" />
+                  <label class="circle-label" for="shop-by-price2">تبلت</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price3" value="300-500" />
+                  <label class="circle-label" for="shop-by-price3">هدست</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price4" value="300-400" />
+                  <label class="circle-label" for="shop-by-price4"
+                    >لپ تاب</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="shop-by-price5" value="700-1000" />
+                  <label class="circle-label" for="shop-by-price5"
+                    >ساعت هوشمند</label
+                  >
+                </li>
+              </ul>
             </div>
-            <ul style="margin-top: 10px;">
-              <li>
-                <input type="checkbox" id="shop-by-price1" value="100-200" />
-                <label class="circle-label" for="shop-by-price1">موبایل</label>
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price2" value="200-300" />
-                <label class="circle-label" for="shop-by-price2">تبلت</label>
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price3" value="300-500" />
-                <label class="circle-label" for="shop-by-price3">هدست</label>
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price4" value="300-400" />
-                <label class="circle-label" for="shop-by-price4">لپ تاب</label>
-              </li>
-              <li>
-                <input type="checkbox" id="shop-by-price5" value="700-1000" />
-                <label class="circle-label" for="shop-by-price5"
-                  >ساعت هوشمند</label
-                >
-              </li>
-            </ul>
           </div>
         </div>
         <div class="col-md-9">
