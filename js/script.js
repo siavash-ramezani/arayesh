@@ -1,8 +1,4 @@
-let Col2 = document.querySelector("#col2");
-let Col3 = document.querySelector("#col3");
-let Col4 = document.querySelector("#col4");
-let Col5 = document.querySelector("#col5");
-let changeItem = document.querySelectorAll(".change-item");
+
 let hamMenu = document.querySelector(".hamburger-menu");
 
 function hamburgerMenu() {
@@ -13,38 +9,7 @@ function hamburgerMenu() {
     menuShow.style.display = "none";
   }
 }
-function col2() {
-  changeItem.forEach(function (item) {
-    item.classList.remove("col-md-4");
-    item.classList.remove("col-md-3");
-    item.classList.remove("col-md-2");
-    item.classList.add("col-md-6");
-  });
-}
-function col3() {
-  changeItem.forEach(function (item) {
-    item.classList.remove("col-md-2");
-    item.classList.remove("col-md-3");
-    item.classList.remove("col-md-6");
-    item.classList.add("col-md-4");
-  });
-}
-function col4() {
-  changeItem.forEach(function (item) {
-    item.classList.remove("col-md-2");
-    item.classList.remove("col-md-4");
-    item.classList.remove("col-md-6");
-    item.classList.add("col-md-3");
-  });
-}
-function col5() {
-  changeItem.forEach(function (item) {
-    item.classList.remove("col-md-4");
-    item.classList.remove("col-md-3");
-    item.classList.remove("col-md-6");
-    item.classList.add("col-md-2");
-  });
-}
+
 //
 var deadline = new Date("dec 31, 2020 15:37:25").getTime();
 
@@ -112,9 +77,3 @@ function proShipping() {
   reviewSelect.classList.remove("current-discribe");
   shippingSelect.classList.add("current-discribe");
 }
-
-// function invenroryShow() {
-//   let inventory = document.querySelector(".product-table");
-//   inventory.style.display = "block";
-//   inventory.style.transitionDuration = "1s";
-// }

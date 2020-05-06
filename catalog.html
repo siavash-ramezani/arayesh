@@ -588,50 +588,45 @@
                   </form>
                 </div>
                 <div class="col-md-4"></div>
-                <div class="col-md-3">
+                <div class="col-md-3 dis-sm-none">
                   <div class="view-mode flex">
-                    <div class="content-type-1 grid-types">
-                      <div class="vertical-black"></div>
-                      <div class="vertical-black"></div>
-                      <div class="vertical-black"></div>
-                    </div>
                     <div
                       onclick="col2()"
                       id="col2"
                       class="content-type-2 grid-types"
                     >
-                      <div class="horizontal-white"></div>
-                      <div class="horizontal-grey"></div>
+                      <div class="horizontal-white remover view-active"></div>
+                      <div class="horizontal-grey remover view-active"></div>
                     </div>
                     <div
                       onclick="col3()"
                       id="col3"
                       class="content-type-2 grid-types"
                     >
-                      <div class="horizontal-white"></div>
-                      <div class="horizontal-grey"></div>
-                      <div class="horizontal-grey"></div>
+                      <div class="horizontal-white remover"></div>
+                      <div class="horizontal-grey remover"></div>
+                      <div class="horizontal-grey remover"></div>
                     </div>
                     <div
                       onclick="col4()"
                       id="col4"
                       class="content-type-2 grid-types"
                     >
-                      <div class="horizontal-white"></div>
-                      <div class="horizontal-grey"></div>
-                      <div class="horizontal-grey"></div>
-                      <div class="horizontal-grey"></div>
+                      <div class="horizontal-white remover"></div>
+                      <div class="horizontal-grey remover"></div>
+                      <div class="horizontal-grey remover"></div>
+                      <div class="horizontal-grey remover"></div>
                     </div>
                     <div
                       onclick="col5()"
                       id="col5"
                       class="content-type-2 grid-types"
                     >
-                      <div class="horizontal-white"></div>
-                      <div class="horizontal-grey"></div>
-                      <div class="horizontal-grey"></div>
-                      <div class="horizontal-grey"></div>
-                      <div class="horizontal-grey"></div>
+                      <div class="horizontal-white remover"></div>
+                      <div class="horizontal-grey remover"></div>
+                      <div class="horizontal-grey remover"></div>
+                      <div class="horizontal-grey remover"></div>
+                      <div class="horizontal-grey remover"></div>
                     </div>
                   </div>
                 </div>
@@ -1354,6 +1349,94 @@
         </p>
       </div>
     </footer>
+    <a href="#toTop" class="to-top flex center-all">
+      <i class="fas fa-long-arrow-alt-up"></i>
+    </a>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".to-top").bind("click", function () {
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          $(window).scrollTop() / 3
+        );
+        return false;
+      });
+    </script>
     <script src="/js/script.js"></script>
+    <script>
+      let remover = document.getElementsByClassName("remover");
+      let Col2 = document.querySelector("#col2");
+      let col2Children = Col2.children;
+      let Col3 = document.querySelector("#col3");
+      let col3Children = Col3.children;
+      let Col4 = document.querySelector("#col4");
+      let col4Children = Col4.children;
+      let Col5 = document.querySelector("#col5");
+      let col5Children = Col5.children;
+      let changeItem = document.querySelectorAll(".change-item");
+      function col2(e) {
+        changeItem.forEach(function (item) {
+          item.classList.remove("col-md-4");
+          item.classList.remove("col-md-3");
+          item.classList.remove("col-md-2");
+          item.classList.add("col-md-6");
+        });
+        for (var x = 0; x < remover.length; x++) {
+          remover[x].classList.remove("view-active");
+        }
+        for (var i = 0; i < col2Children.length; i++) {
+          col2Children[i].classList.add("view-active");
+        }
+      }
+      function col3() {
+        changeItem.forEach(function (item) {
+          item.classList.remove("col-md-2");
+          item.classList.remove("col-md-3");
+          item.classList.remove("col-md-6");
+          item.classList.add("col-md-4");
+        });
+        for (var x = 0; x < remover.length; x++) {
+          remover[x].classList.remove("view-active");
+        }
+        for (var i = 0; i < col3Children.length; i++) {
+          col3Children[i].classList.add("view-active");
+        }
+      }
+      function col4() {
+        changeItem.forEach(function (item) {
+          item.classList.remove("col-md-2");
+          item.classList.remove("col-md-4");
+          item.classList.remove("col-md-6");
+          item.classList.add("col-md-3");
+        });
+        for (var x = 0; x < remover.length; x++) {
+          remover[x].classList.remove("view-active");
+        }
+        for (var i = 0; i < col4Children.length; i++) {
+          col4Children[i].classList.add("view-active");
+        }
+      }
+      function col5() {
+        changeItem.forEach(function (item) {
+          item.classList.remove("col-md-4");
+          item.classList.remove("col-md-3");
+          item.classList.remove("col-md-6");
+          item.classList.add("col-md-2");
+        });
+        for (var x = 0; x < remover.length; x++) {
+          remover[x].classList.remove("view-active");
+        }
+        for (var i = 0; i < col5Children.length; i++) {
+          col5Children[i].classList.add("view-active");
+        }
+      }
+    </script>
   </body>
 </html>

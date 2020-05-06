@@ -705,6 +705,26 @@
         </p>
       </div>
     </footer>
+    <a href="#toTop" class="to-top flex center-all">
+      <i class="fas fa-long-arrow-alt-up"></i>
+    </a>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".to-top").bind("click", function () {
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          $(window).scrollTop() / 3
+        );
+        return false;
+      });
+    </script>
     <script src="/js/script.js"></script>
   </body>
 </html>

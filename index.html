@@ -336,7 +336,7 @@
               <li><a href="#">instagram</a></li>
             </ul>
             <div class="image-container flex">
-              <img
+              <img id="headerImage"
                 class="icon-image"
                 src="./images/files/slider-1_1000x1d06.jpg"
                 alt=""
@@ -350,9 +350,9 @@
               <a class="m-btn" href="#">خرید کن </a>
             </div>
             <ul class="slick-slider">
-              <li class="active"><a class="color-black" href="#">01</a></li>
-              <li><a href="#">02</a></li>
-              <li><a href="#">03</a></li>
+              <li><p class="color-black first-photo header-active">01</p></li>
+              <li><p class="second-photo">02</p></li>
+              <li><p class="third-photo">03</p></li>
             </ul>
           </div>
         </div>
@@ -1367,12 +1367,26 @@
         </p>
       </div>
     </footer>
+    <a href="#toTop" class="to-top flex center-all">
+      <i class="fas fa-long-arrow-alt-up"></i>
+    </a>
     <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
       crossorigin="anonymous"
     ></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".to-top").bind("click", function () {
+  $("html, body").animate(
+    {
+      scrollTop: 0,
+    },
+    $(window).scrollTop() / 3
+  );
+  return false;
+});
+    </script>
     <script>
       $(".first-carousel").owlCarousel({
         loop: true,
@@ -1391,6 +1405,31 @@
           },
         },
       });
+    </script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script>
+      let firstPhoto = document.querySelector(".first-photo");
+      let secondPhoto = document.querySelector(".second-photo");
+      let thirdPhoto = document.querySelector(".third-photo");
+      let imgSource = document.querySelector("#headerImage")
+        firstPhoto.addEventListener("click", function () {
+          firstPhoto.classList.add("header-active")
+          thirdPhoto.classList.remove("header-active")
+          secondPhoto.classList.remove("header-active")
+          imgSource.src = "./images/files/slider-1_1000x1d06.jpg";
+        });
+        secondPhoto.addEventListener("click", function () {
+          firstPhoto.classList.remove("header-active")
+          thirdPhoto.classList.remove("header-active")
+          secondPhoto.classList.add("header-active")
+          imgSource.src = "./images/files/slider-3_1000x2960.jpg";
+        });
+        thirdPhoto.addEventListener("click", function () {
+          firstPhoto.classList.remove("header-active")
+          secondPhoto.classList.remove("header-active")
+          thirdPhoto.classList.add("header-active")
+          imgSource.src = "./images/files/slider-2_1000xad24.jpg";
+        });
     </script>
   </body>
 </html>
